@@ -1,1 +1,1 @@
-git log --pretty=format:"%h %ad | %s%d [%ad]" --graph --date=short
+Изучаю на udemy.com курс "Полный курс по JavaScript - с нуля до результата"
