@@ -22,8 +22,58 @@
 // console.log(a.toLowerCase());
 
 /*Округление*/
-let twelve = '12.5px';
-console.log(parseInt(twelve));
-console.log(parseFloat(twelve));
-let num = 12.75;
-console.log(Math.round(num));
+// let twelve = '12.5px';
+// console.log(parseInt(twelve));
+// console.log(parseFloat(twelve));
+// let num = 12.75;
+// console.log(Math.round(num));
+
+/*Callback функции*/
+/*Вторая функция выполниться раньше первой*/
+
+// function first(){
+//     setTimeout( function(){
+//         console.log(1);
+//     }, 500 );
+//     }
+
+// function second(){
+//     console.log(2);
+// }
+// first();
+// second();
+
+/* Чтобы этого избежать используем callback вызов функции*/
+
+// function learnJS(lang, callback){
+//     setTimeout(function(){
+//         console.log("Я учу " + lang);
+//         callback();
+//     }, 500);
+// }
+// learnJS("JavaScript", function(){
+//     console.log("Выполниться четко после первой, а не раньше!");
+// });
+
+/*Или так*/
+
+// function learnJS(lang, callback){
+//     console.log("Я учу " + lang);
+//     callback();
+// }
+// learnJS("JavaScript", function(){
+//     console.log("Выполниться четко после первой, а не раньше!");
+// });
+
+/*Или так*/
+
+// function learnJS(lang, callback){
+//     console.log("Я учу " + lang);
+//     callback();
+// }
+// function done(){
+//     console.log("Выполниться четко после первой, а не раньше!");
+// }
+// learnJS("JavaScript", done);
+
+
