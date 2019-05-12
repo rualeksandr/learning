@@ -43,4 +43,4 @@ wrapper.removeChild(heart[1]);
 document.body.replaceChild(btn[1], circle[1]);
 
 // div.innerHTML = '<h3>Hello World!</h3>';
-div.textContent = ">Без верстки, более безопасно!";
+div.textContent = "<p>Без верстки, более безопасно!</p>";
